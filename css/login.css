@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Rubik", sans-serif;
+}
+
+/* global variables */
+:root {
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #d01418;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
+    --transition: 0.15s ease-in-out;
+}
+
+/* start login page */
+
+.login .container .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form {
+    padding: 28px;
+}
+
+header nav .links {
+    padding: 20px;
+}
+
+header nav .links .open_menu {
+    display: none;
+}
+
+.details input {
+    width: 50%;
+    padding: 11px;
+    border: none;
+    outline: none;
+    margin: 13px 0px;
+    border-radius: 7px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.details label {
+    text-align: justify;
+}
+
+.details input:focus {
+    border-color: var(--main-color);
+}
+
+.details input[type=submit] {
+    cursor: pointer;
+    background: var(--main-color);
+    font-weight: 550;
+    font-size: 18px;
+}
+
+@media (max-width:780px) {
+    .details input {
+        width: 80%;
+    }
+}
+
+@media (max-width:420px) {
+    .details input {
+        width: 100%;
+    }
+
+    .details input[type=submit] {
+        font-size: 14px;
+    }
+}
